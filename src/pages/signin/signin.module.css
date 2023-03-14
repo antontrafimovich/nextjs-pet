@@ -1,0 +1,65 @@
+.container {
+  background: white;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+}
+
+.signInSection {
+  padding: 30px 50px;
+
+  flex: 5.5;
+}
+
+.signInSectionMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.asideSectionInfo {
+  position: absolute;
+  bottom: 150px;
+  max-width: 67.8%;
+  left: 172px;
+  background: rgba(255, 242, 242, 0.13);
+  mix-blend-mode: normal;
+  backdrop-filter: blur(35.5px);
+  border-radius: 16px;
+
+  padding: 24px 44px;
+  color: white;
+}
+
+.asideSectionInfoTitle {
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+.asideSectionInfoContent {
+  margin-top: 30px;
+
+  font-family: sans-serif;
+  line-height: 33px;
+  font-size: 18px;
+}
+
+.signInSectionMainForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.asideSection {
+  flex: 0 0 865px;
+
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

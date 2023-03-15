@@ -27,7 +27,7 @@ const getBodyFromResponse = (res) => {
 
 export default function handler(req, res) {
   const signUpRequest = request(
-    "http://localhost:5000/auth/signup",
+    "http://localhost:5000/auth/login",
     {
       method: "POST",
       headers: {
@@ -43,7 +43,7 @@ export default function handler(req, res) {
         return res.status(500).json(err);
       }
 
-      res.status(response.statusCode).json(body);
+      res.status(response.statusCode).json(body.response ?? body);
     }
   ).on("error", (err) => {
     res.status(500).json(err);

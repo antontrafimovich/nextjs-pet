@@ -1,8 +1,9 @@
-import styles from "./signin.module.css";
-
-import Image from "next/image";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
+
+import styles from "./signin.module.css";
+import { SignInForm } from "./ui/form/signin-form";
 
 export default function SignIn() {
   return (
@@ -24,17 +25,7 @@ export default function SignIn() {
           <section></section>
 
           <section>
-            <form
-              action="/api/signin"
-              method="post"
-              className={styles.signInSectionMainForm}
-            >
-              <label for="login">Login:</label>
-              <input type="text" id="login" name="login" />
-              <label for="password">Password:</label>
-              <input type="text" id="password" name="password" />
-              <button type="submit">Submit</button>
-            </form>
+            <SignInForm />
           </section>
         </main>
       </section>

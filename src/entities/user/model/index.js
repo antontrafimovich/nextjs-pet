@@ -26,5 +26,7 @@ export const createTokensSlice = persist(
       },
     };
   },
-  { name: "tokens", partialize: (state) => state.tokens.payload ?? undefined }
+  {
+    name: "tokens",
+  }
 );
